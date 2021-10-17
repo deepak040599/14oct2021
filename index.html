@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+
+    </script>
 </head>
 <body>
+
+
+
+    <script>
+        /*
+        js objexts
+                  {
+                      property:value
+                  }
+        
+        
+        */
+        var students = { 
+            "name":"deepak",
+            "surname":"suthar",
+            adddress: "barada",
+            friends:['anil','shubham','vivek','ashita'],  // js object also contain array
+            teachers:[{
+                name:"anil doller",
+                contact:"645231348",
+            },{
+                name: "neeeraj chopda",
+                contact: "8757899",
+            },{}],//array of objects
+            sister:{
+                name:"saloni",
+                "contact":"7894561230",
+                "hobbies":['reading','writing','studies']
+            }
+        }; //js objects
+// alert(students.friends);
+        console.log(students.name);
+        console.log(students.surname);
+        console.log(students.adddress);
+        console.log(students.friends[0]);
+        console.log(students.name + " have " + students.friends.length +"  friends");
+
+        // deepak suthar have 2 teachers
+        console.log(students.name + " have " + students.teachers.length + " teachers");
+
+        // print teacher contact
+        /* for(initiLISED;condition;incre/decre)*/
+
+        for(var i=0; i<students.teachers.length;i++){
+            console.log(students.teachers[i].name + ''+students.teachers[i].contact );
+        }
+       var x = ['ANIL',students]; //arrays also can contain js objects 
+    </script>
     
 </body>
 </html>
